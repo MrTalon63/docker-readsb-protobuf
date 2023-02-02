@@ -24,7 +24,7 @@ on:
 #  - REPO: repo name on dockerhub
 #  - IMAGE: image name on dockerhub
 env:
-  DOCKERHUB_REPO: mikenye
+  DOCKERHUB_REPO: mrtalon63
   DOCKERHUB_IMAGE: readsb-protobuf
   GHCR_IMAGE: ${{ github.repository }}
   GHCR_REGISTRY: ghcr.io
