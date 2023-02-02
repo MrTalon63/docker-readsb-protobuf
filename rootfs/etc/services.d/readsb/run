@@ -330,6 +330,11 @@ if [[ -n "$READSB_PLUTO_URI" ]]; then
     READSB_CMD+=("--pluto-uri=$READSB_PLUTO_URI")
 fi
 
+# Handle extra options
+if [[ -n "$READSB_EXTRA_CMDS" ]]; then
+    READSB_CMD+=("$READSB_EXTRA_CMDS")
+fi
+
 ##### LAUNCH READSB #####
 
 set -eo pipefail
